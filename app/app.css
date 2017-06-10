@@ -1,0 +1,109 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header .brand-title {
+  color: #777;
+}
+
+.header .brand-subtitle {
+  color: #777;
+  float: right;
+  margin-top:10px;
+}
+
+.brand {
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+a:hover, a:visited, a:active, a:focus {
+    text-decoration: none;
+}
+
+.header {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.photo-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.thumbnail-clickable:hover {
+  cursor: pointer;
+}
+
+.img-thumbnail {
+ border-color: transparent;
+
+}
+
+.thumbnail {
+  height: 220px;
+}
+
+.thumbnail .caption {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .thumbnail { 
+    max-height:150px; 
+    max-width: 150px;  
+    margin-bottom: 1px;
+    height: auto;
+  }
+
+  .thumbnail .caption {
+    padding: 0px;
+  }
+
+  .thumbnail img {
+      padding: 0px;
+      max-height: 140px;
+      max-width: 140px;
+      width: 100%;
+      height: auto;
+  } 
+}
+

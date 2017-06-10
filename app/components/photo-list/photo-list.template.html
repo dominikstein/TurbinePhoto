@@ -1,0 +1,23 @@
+<div class="panel panel-primary">
+    <div class="panel-heading"><h3 class="panel-title">Albumy</h3>
+     <span ng-bind-html="$ctrl.num | supernumber : 2"></span>
+     </div>
+    <div class="panel-body">
+      
+        <ul class="photo-thumbs list-inline">
+            <li ng-repeat="album in $ctrl.albums" class="col-lg-2 col-md-3 col-sm-3 col-xs-4" >
+                <div class="thumbnail thumbnail-clickable" ng-click="$ctrl.clickAlbum(album.key)">
+                    <img ng-src="{{album.values[0].thumbnailUrl}}" class="img-thumbnail img-responsive"  />
+                    <div class="caption">
+                        <h4 class="text-center hidden-xs">Album {{album.key}}</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="panel-footer"> 
+         <button class="btn btn-default" ng-click="$ctrl.clickNext()">Więcej</button>
+         
+    </div>
+</div>
