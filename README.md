@@ -13,4 +13,5 @@ npm run protractor
 
 
 TODO List:
-- uwspólnić system stronicowania fotografii i użyć w obu komponentach: photo-album i photo-list
+- uwspólnić system stronicowania fotografii i użyć w obu komponentach: photo-album i photo-list (w tym zapamiętywanie stanu widoku, np stanu stronicowania)
+- dopisać więcej testów E2E
